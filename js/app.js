@@ -2,7 +2,7 @@ import { configuration as config } from './configuration.js'
 
 const fetchExchangeData = async (url) => {
   try {
-    const response = await fetch(url, {
+    const response = await fetch('https://cors.io/?' + url, {
       cache: 'no-store',
       headers: { Accept: 'text/plain' },
     })
